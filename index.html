@@ -188,6 +188,25 @@
             animation: fadeInUp 1s ease-out 0.3s both;
         }
 
+        .hero-logo {
+            margin-bottom: 2rem;
+            animation: fadeInUp 1s ease-out 0.1s both;
+        }
+
+        .hero-logo img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+            border: 5px solid white;
+            transition: all 0.4s ease;
+        }
+
+        .hero-logo img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+        }
+
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -736,6 +755,11 @@
                 font-size: 1.2rem;
             }
 
+            .hero-logo img {
+                width: 150px;
+                height: 150px;
+            }
+
             .section-title {
                 font-size: 2.5rem;
             }
@@ -770,6 +794,11 @@
                 font-size: 2.5rem;
             }
 
+            .hero-logo img {
+                width: 120px;
+                height: 120px;
+            }
+
             .about, .services, .events, .contact {
                 padding: 4rem 1rem;
             }
@@ -797,6 +826,9 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
+            <div class="hero-logo">
+                <img src="favicon.png" alt="The Global Ministry of Jesus Christ Inc Logo">
+            </div>
             <h1>
                 Welcome to a Place of
                 <strong>Faith, Joy & Love</strong>
@@ -973,7 +1005,7 @@
                         <div class="contact-icon">✉️</div>
                         <div class="contact-details">
                             <h4>Email</h4>
-                            <p>tgmjcinctaytay@gmail.com</p>
+                            <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d9adbeb4b3bab0b7baadb8a0adb8a099beb4b8b0b5f7bab6b4">[email&#160;protected]</a></p>
                         </div>
                     </div>
 
@@ -1070,7 +1102,7 @@
         </div>
     </footer>
 
-    <script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         // Enhanced smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -1112,11 +1144,4 @@
         });
 
         // Newsletter form handler
-        document.querySelector('footer form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for subscribing to our newsletter!');
-            this.reset();
-        });
-    </script>
-</body>
-</html>
+        document.qu
